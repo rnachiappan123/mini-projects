@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Video Downloader</title>
+        <link rel="icon" type="image/png" href="/favicon.png"/>
+    </head>
+    <body>
+        <center>
+            <h1>Video Downloader</h1>
+            <hr>
+            <br>
+            <form action="video_download.php">
+                <label for="video_url"><b>Video URL:</b></label>
+                <input type="text" id="video_url" name="video_url" required>
+                <br>
+                <h3>Start time:</h3>
+                <label for="start_hour"><b>Hour:</b></label>
+                <input type="number" id="start_hour" name="start_hour" required min="0" style="width: 68px; height: 34px">
+                <label for="start_min"><b>Minute:</b></label>
+                <input type="number" id="start_min" name="start_min" required min="0" max="59" style="width: 68px; height: 34px">
+                <label for="start_sec"><b>Second:</b></label>
+                <input type="number" id="start_sec" name="start_sec" required min="0" max="59" style="width: 68px; height: 34px">
+                <br>
+                <h3>End time:</h3>
+                <label for="end_hour"><b>Hour:</b></label>
+                <input type="number" id="end_hour" name="end_hour" required min="0" style="width: 68px; height: 34px">
+                <label for="end_min"><b>Minute:</b></label>
+                <input type="number" id="end_min" name="end_min" required min="0" max="59" style="width: 68px; height: 34px">
+                <label for="end_sec"><b>Second:</b></label>
+                <input type="number" id="end_sec" name="end_sec" required min="0" max="59" style="width: 68px; height: 34px">
+                <br>
+                <br>
+                <br>
+                <label for="file_name"><b>File name:</b></label>
+                <input type="text" id="file_name" name="file_name" required>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Download">
+                <input type="reset">
+            </form>
+        </center>
+    </body>
+</html>

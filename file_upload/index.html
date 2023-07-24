@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>File Upload</title>
+        <link rel="icon" type="image/png" href="/favicon.png"/>
+    </head>
+    <body>
+        <center>
+            <h1>Upload File(s)</h1>
+            <hr>
+            <form action="file_upload.php" method="post" enctype="multipart/form-data">
+                <label for="file_select">Select file(s) to upload:</label>
+                <br>
+                <br>
+                <input type="file" id="file_select" name="file_select[]" required multiple>
+                <br>
+                <br>
+                <input type="submit" value="Upload">
+            </form>
+        </center>
+    </body>
+</html>

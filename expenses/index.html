@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Monthly Expenses</title>
+        <link rel="icon" type="image/png" href="/favicon.png"/>
+    </head>
+    <body>
+        <center>
+            <h1>Monthly Expenses (November 2020)</h1>
+            <hr>
+            <h2>View Entries:</h2>
+            <button onClick="document.location='view_data.php'">View All</button>
+            <br>
+            <br>
+            <hr>
+            <h2>Add a New Entry:</h2>
+            <form action="add_data.php">
+                <label for="exp_name"><b>Name:</b></label>
+                <br>
+                <input type="text" id="exp_name" name="exp_name" required>
+                <br>
+                <label for="exp_amnt"><b>Amount:</b></label>
+                <br>
+                <input type="number" id="exp_amnt" name="exp_amnt" required step="any">
+                <br>
+                <label for="exp_date"><b>Date:</b></label>
+                <br>
+                <input type="date" id="exp_date" name="exp_date" required style="width: 212px; height: 34px">
+                <br>
+                <label for="exp_desc">Description:</label>
+                <br>
+                <textarea id="exp_desc" name="exp_desc" style="width: 212px; height: 68px"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </form>
+        </center>
+        <script>
+            document.getElementById("exp_date").valueAsDate = new Date();
+        </script>
+    </body>
+</html>
